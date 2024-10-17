@@ -48,7 +48,7 @@ a {
 }
 
 a:visited {
-  color: var(--teal-colour);
+  color: var(--red-colour);
   text-decoration: none;
 }
 
