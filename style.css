@@ -1,0 +1,38 @@
+:root {
+  --dark-blue-colour: #264653;
+  --teal-colour: #2a9d8f;
+  --yellow-colour: #e9c46a;
+  --orange-colour: #f4a261;
+  --red-colour: #e76f51;
+}
+
+@font-face {
+  font-family: Fredoka;
+  src: url(Fredoka.ttf);
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  color: var(--dark-blue-colour);
+  background-color: var(--yellow-colour);
+}
+
+.title {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  font-size: 36pt;
+  font-weight: normal;
+}
+
+.logo {
+	width: 30%;
+}
+
+.logodiv {
+	text-align: center;
+}
+
+
+     
