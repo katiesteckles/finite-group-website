@@ -17,20 +17,29 @@ body {
   background-color: var(--yellow-colour);
 }
 
+h2 {
+  text-align: center;
+  color: var(--teal-colour);
+}
+
+h3 {
+  text-align: center;
+  color: var(--teal-colour);
+}
+
 .all {
   width: 80%;
   margin: auto;
 }
 
 .title {
-  padding: 10px;
   text-align: center;
-  font-size: 36pt;
+  font-size: 150%;
   font-weight: normal;
 }
 
 .logo {
-	width: 30%;
+	width: 20ex;
 }
 
 .logodiv {
@@ -39,7 +48,8 @@ body {
 
 .patreonlink {
 	text-align: center;
-	font-size: 24px;
+	font-size: 180%;
+  font-weight: bold;
 }
 
 a {
@@ -52,4 +62,48 @@ a:visited {
   text-decoration: none;
 }
 
-     
+#benefits {
+  text-align: center;
+  padding-bottom: 5ex;
+  border-top: thin solid var(--dark-blue-colour);
+}
+#benefits table {
+  border-collapse: collapse;
+}
+#benefits th, td {
+  border-right: thin solid var(--dark-blue-colour);
+  padding: 0ex 2ex;
+}
+#benefits th.tier {
+  text-align: center;
+}
+#benefits th.benefit {
+  text-align: right;
+}
+#benefits td {
+  font-size: 150%;
+  text-align: center;
+}
+#benefits td.yes {
+  color: var(--teal-colour);
+}
+#benefits td.no {
+  color: var(--red-colour);
+}
+
+.left {
+  float: left;
+  width: 49%;
+  border-right: thin solid var(--dark-blue-colour);
+}
+.right {
+  float: left;
+  width: 50%;
+}
+
+#instructions {
+  border-top: thin solid var(--dark-blue-colour);
+}
+#instructions li {
+  padding: 2ex;
+}
