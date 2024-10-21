@@ -56,7 +56,7 @@ h3 {
 .patreonlink {
 	text-align: center;
 	font-size: 180%;
-  font-weight: bold;
+  	font-weight: bold;
 }
 
 a {
@@ -79,40 +79,49 @@ a:visited {
   padding-bottom: 5ex;
   /*border-top: thin solid var(--dark-blue-colour);*/
 }
+
+
+
 #benefits table {
   border-collapse: collapse;
+  width:100%;
+  max-width:960px;
+  margin:auto;
 }
 #benefits th, td {
   border-right: medium solid var(--dark-blue-colour);
   padding: 0ex 2ex;
 }
 
-#benefits th.end, td.end {
-  padding: 0ex 2ex;
-  border-right: none;
-}
 #benefits th.tier {
   text-align: center;
 }
 #benefits th.benefit {
   text-align: right;
 }
-
-#benefits th.price {
+#benefits th.end, td.end {
+  padding: 0ex 2ex;
+  border-right: none;
+}
+#benefits td.price, th.price {
   text-align: center;
   color: var(--teal-colour);
   font-weight: normal;
+  font-size: 100%;
 }
+
 #benefits td {
   font-size: 150%;
   text-align: center;
 }
+
 #benefits td.yes {
   color: var(--teal-colour);
 }
 #benefits td.no {
   color: var(--red-colour);
 }
+
 
 .left {
   float: left;
@@ -131,5 +140,86 @@ a:visited {
   padding: 2ex;
 }
 #instructions p {
-  padding: 3ex;
+  padding: 0ex 3ex;
+  margin-top: 0ex;
 }
+
+@media only screen and (max-width: 900px) {
+	table, tbody, thead, tbody, th, td, tr {
+	  display: block;
+	  width:100%;
+	  clear:both;
+	}
+	thead tr {
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+	}
+	tr {
+	}
+	td,th {
+	  border: none;
+	}
+	td:before {
+	  float:left;
+	  text-align: right;
+	  width: 75%;
+	  padding:0 0 0 1%;
+	  margin-left:0;
+	}
+	td {
+	  padding-left:50%;
+	 -moz-box-sizing:border-box;
+	 -webkit-box-sizing:border-box;
+	  box-sizing:border-box; 
+	 }
+	 
+	td:nth-of-type(1):before {content: "Free (£0/$0)";}
+	td:nth-of-type(2):before {content: "Klein Four (£4/$6)";}
+	td:nth-of-type(3):before {content: "Dih8 (£8/$10)";}
+	td:nth-of-type(4):before {content: "The Monster (£50/$65)";}
+	
+	#benefits table {
+	  border-collapse: collapse;
+	  width:100%;
+	  max-width:960px;
+	  margin:auto;
+	}
+	#benefits th, td {
+	  border-right: none;
+	  padding: 0ex 2ex;
+	}
+	
+	#benefits th.tier {
+	  text-align: center;
+	  border-right: none;
+	}
+	#benefits th.benefit {
+	  text-align: center;
+	  border-right: none;
+	  margin-top: 3ex;
+	}
+	
+	#benefits td.price, th.price {
+	  text-align: center;
+	  color: var(--teal-colour);
+	  font-weight: normal;
+	  font-size: 100%;
+	  border-right: none;
+	}
+	
+	#benefits td {
+	  font-size: 100%;
+	  text-align: center;
+	}
+	#benefits td.yes {
+	  color: var(--teal-colour);
+	  border-right: none;
+	}
+	#benefits td.no {
+	  color: var(--red-colour);
+	  border-right: none;
+	}
+
+}
+	
