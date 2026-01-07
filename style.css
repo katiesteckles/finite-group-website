@@ -49,6 +49,10 @@ h3 {
 	width: 20ex;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 .gens {
 	width: 80%;
 	align: center;
